@@ -1,3 +1,7 @@
+/**
+ * @author waterproofpatch
+ * @brief driver for the macros
+ */
 #include <stdio.h>
 
 #include "logger.h" /* LOG_* macros */
