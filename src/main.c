@@ -4,8 +4,7 @@
  */
 #include <stdio.h>
 
-#include "logger.h" /* LOG_* macros */
-
+#include "logger.h"     /* LOG_* macros */
 #include "breakpoint.h" /* BREAKPOINT_* */
 
 int main(int argc, char **argv)
