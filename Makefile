@@ -1,11 +1,16 @@
+# Directories
 SRC_DIR=src
 BIN_DIR=bin
-ARM_FLAGS=-Wall --specs=nosys.specs -mthumb -march=armv7
-ARM_CC=arm-none-eabi-gcc
-X86_FLAGS=-Wall
-X86_CC=gcc
 
-all: dirs x86 arm
+# Toolchains
+X86_CC=gcc
+ARM_CC=arm-none-eabi-gcc
+
+# Flags
+X86_FLAGS=-Wall
+ARM_FLAGS=-Wall --specs=nosys.specs -mthumb -march=armv7
+
+all: dirs x86 arm 
 
 x86:
 	$(X86_CC) $(X86_FLAGS) $(SRC_DIR)/main.c -o $(BIN_DIR)/x86/main
