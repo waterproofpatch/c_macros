@@ -1,6 +1,7 @@
 # Directories
 SRC_DIR=src
 BIN_DIR=bin
+DOCS_DIRS=html latex
 
 # Toolchains
 X86_CC=gcc
@@ -22,6 +23,10 @@ dirs:
 	mkdir -p $(BIN_DIR)/arm
 	mkdir -p $(BIN_DIR)/x86
 
+docs:
+	doxygen
+
 clean:
 	rm -rf $(BIN_DIR)
+	rm -rf $(DOCS_DIRS)
 

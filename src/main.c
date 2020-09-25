@@ -1,4 +1,5 @@
 /**
+ * @file main.c
  * @author waterproofpatch
  * @brief driver for the macros
  */
@@ -6,13 +7,17 @@
 #include <assert.h>
 
 #include "logger.h"      /* LOG_* macros */
-#include "breakpoint.h"  /* BREAKPOINT_* */
-#include "array_utils.h" /* BREAKPOINT_* */
+#include "breakpoint.h"  /* BREAKPOINT */
+#include "array_utils.h" /* ARRAY_LEN */
 
+/**
+ * @brief Struct for ARRAY_LEN usage
+ *
+ */
 typedef struct SomeStruct
 {
-    int a;
-    int b;
+    int a; /**< Dummy variable */
+    int b; /**< Dummy variable */
 } SomeStruct_t;
 
 /**

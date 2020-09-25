@@ -1,3 +1,8 @@
+/**
+ * @file array_utils.h
+ * @author waterproofpatch
+ * @brief array utilities
+ */
 #ifndef _ARRAY_UTILS_H_
 #define _ARRAY_UTILS_H_
 

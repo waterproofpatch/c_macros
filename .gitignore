@@ -3,3 +3,7 @@ bin
 
 # editor stuff
 tags
+
+# doxygen output
+html
+latex
